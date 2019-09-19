@@ -3,6 +3,12 @@
   <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8" />
     <meta name="description" content="Aula de HTML e CSS" />
     <meta name="author" content="Diego Roberto" />
@@ -24,11 +30,30 @@
     <p>This is a paragraph</p>
     <button onclick="trocaBackColor()">Troca cor</button>
     <div>
-        <p></p>
+      <p></p>
       <label>Nome</label>
-      <input id="txtNome" type="text" onchange="escreveSaudacao(this.value)"/>
+      <input id="txtNome" type="text" onchange="escreveSaudacao(this.value)" />
       <p></p>
       <p id="saudacao">Boa noite</p>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p class="card-text">
+          exemplo
+        </p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./img/burpman.jpg" class="card-img-top" alt="o velho Rick" />
+      <div class="card-body">
+        <h5 class="card-title">Rick Sanchez</h5>
+        <p class="card-text">"-wubba lubba dub dub"</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
   </body>
 </html>
