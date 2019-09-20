@@ -28,3 +28,7 @@ p {
 .bodyClass2 {
   background-color: gold;
 }
+.rounded-corners {
+  background: 0%;
+  border-radius: 45px;
+}
