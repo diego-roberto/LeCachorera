@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>~Pet Shop Le Cachorrera~</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pet Shop Le Cachorrera" />
+    <meta name="author" content="Diego Roberto" />
+    <!-- <meta http-equiv="refresh" content="60" /> -->
+  </head>
+
+  <script src="js/inicial.js"></script>
+
+  <title>Pet Shop Le Cachorrera</title>
+
+  <body background="./img/pet_background.jpg">
+    <!--navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-collapse" href="#"
+        ><img img src="./img/leCachorrera.png" class="rounded-corners"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Inicio<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cadastros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Opções
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+      <form class="form-inline">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+      </form>
+    </nav>
+    <!--navbar end-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form
+            action="link"
+            role="form"
+            id="cadastro"
+            method="post"
+            accept-charset="utf-8"
+            novalidate="novalidate"
+            class="card"
+          >
+            <div style="display:none;">
+              <input type="hidden" name="_method" value="POST" />
+            </div>
+            <input
+              type="hidden"
+              name="data[Cliente][utm_source]"
+              value="site"
+              autocomplete="off"
+              id="EmpresaUtmSource"
+            /><input
+              type="hidden"
+              name="data[Cliente][utm_medium]"
+              value="funcionalidades"
+              autocomplete="off"
+              id="ClienteUtmMedium"
+            /><input
+              type="hidden"
+              name="data[Cliente][utm_campaign]"
+              value="cadastro-de-produtos"
+              autocomplete="off"
+              id="ClienteUtmCampaign"
+            /><input
+              type="hidden"
+              name="data[Cliente][dominio_id]"
+              autocomplete="off"
+              id="ClienteDominioId"
+            /><input
+              type="hidden"
+              name="data[Cliente][endereco]"
+              value=""
+              autocomplete="off"
+              id="ClienteEndereco"
+            />
+            <div class="form-group required">
+              <label for="NomeCliente">Nome</label
+              ><input
+                name="data[Cliente][nome]"
+                class="required form-control error"
+                maxlength="60"
+                value=""
+                autocomplete="off"
+                type="text"
+                id="Nome"
+              /><label
+                for="Nome"
+                generated="true"
+                class="error"
+                style="display: block;"
+              ></label>
+            </div>
+            <div class="required form-group required">
+              <label for="LogradouroEndereco">Rua</label
+              ><input
+                name="data[Cliente][nome]"
+                class="required form-control"
+                value=""
+                autocomplete="off"
+                type="text"
+                id="Logradouro"
+              />
+            </div>
+            <div class="form-group required">
+              <label for="NumeroEndereco">Número</label
+              ><input
+                name="data[Cliente][endereco]"
+                class="required form-control"
+                maxlength="14"
+                autocomplete="off"
+                type="text"
+                id="NumeroEndereco"
+              />
+            </div>
+            <div class="form-group required">
+              <label for="ComplementeEndereco">Complemento</label
+              ><input
+                name="data[Cliente][endereco]"
+                class="required form-control"
+                maxlength="14"
+                autocomplete="off"
+                type="text"
+                id="ComplementoEndereco"
+              />
+            </div>
+            <div class="form-group required">
+              <label for="BairroEndereco">Bairro</label
+              ><input
+                name="data[Cliente][endereco]"
+                class="required form-control"
+                maxlength="30"
+                autocomplete="off"
+                type="text"
+                id="BairroEndereco"
+              />
+            </div>
+            <div class="form-group required">
+              <label for="CidadeEndereco">Cidade</label
+              ><input
+                name="data[Cliente][endereco]"
+                class="required form-control"
+                maxlength="25"
+                autocomplete="off"
+                type="text"
+                id="CidadeEndereco"
+              />
+            </div>
+            <div class="form-group required">
+              <label for="UfEndereco">UF</label
+              ><input
+                name="data[Cliente][endereco]"
+                class="required form-control"
+                maxlength="2"
+                autocomplete="off"
+                type="text"
+                id="UfEndereco"
+              />
+            </div>
+            <div class="form-group required">
+              <label for="CepEndereco">CEP</label
+              ><input
+                name="data[Cliente][endereco]"
+                class="required form-control"
+                maxlength="8"
+                autocomplete="off"
+                type="text"
+                id="CepEndereco"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Telefone">Telefone</label
+              ><input
+                name="data[Cliente][celular]"
+                class="mascara-telefone form-control"
+                maxlength="11"
+                autocomplete="off"
+                type="text"
+                id="Telefone"
+              />
+            </div>
+            <div class="form-group required">
+              <label for="Email">E-mail</label
+              ><small class="text-muted"> (opcional)</small
+              ><input
+                name="data[Cliente][email]"
+                class="email required form-control"
+                value=""
+                autocomplete="off"
+                type="email"
+                id="Email"
+              />
+            </div>
+            <div class="form-group required">
+              <label for="Senha">Senha</label
+              ><input
+                name="data[Cliente][senha]"
+                class="required form-control error"
+                value=""
+                autocomplete="off"
+                type="password"
+                id="Senha"
+              /><label
+                for="Senha"
+                generated="true"
+                class="error"
+                style="display: block;"
+              ></label>
+            </div>
+            <div class="pwstrength_viewport_progress">
+              <div class="progress">
+                <div class="progress-bar">
+                  <span class="password-verdict"></span>
+                </div>
+              </div>
+            </div>
+            <div class="margin-top-20px">
+              <button class="btn btn-success btn-lg" type="submit">
+                <span
+                  class="glyphicon glyphicon-ok-sign margin-right-10px"
+                ></span
+                >Cadastrar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
